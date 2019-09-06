@@ -16,6 +16,7 @@ class Grammar extends BaseGrammar
         'aggregate',
         'columns',
         'from',
+        'partition',
         'joins',
         'wheres',
         'groups',
