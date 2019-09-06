@@ -90,6 +90,13 @@ class Builder
      * @var array
      */
     public $joins;
+    
+    /**
+     * The partition which the query is targeting.
+     *
+     * @var string
+     */
+    public $partition;
 
     /**
      * The where constraints for the query.
@@ -315,6 +322,19 @@ class Builder
     public function from($table)
     {
         $this->from = $table;
+
+        return $this;
+    }
+    
+    /**
+     * Set the partition which the query is targeting.
+     *
+     * @param $partition
+     * @return $this
+     */
+    public function partition($partition)
+    {
+        $this->partition = is_array($partition) ? $partition : func_get_args();
 
         return $this;
     }
