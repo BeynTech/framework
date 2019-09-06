@@ -83,13 +83,6 @@ class Builder
      * @var string
      */
     public $from;
-
-    /**
-     * The table joins for the query.
-     *
-     * @var array
-     */
-    public $joins;
     
     /**
      * The partition which the query is targeting.
@@ -97,6 +90,13 @@ class Builder
      * @var string
      */
     public $partition;
+
+    /**
+     * The table joins for the query.
+     *
+     * @var array
+     */
+    public $joins;
 
     /**
      * The where constraints for the query.
