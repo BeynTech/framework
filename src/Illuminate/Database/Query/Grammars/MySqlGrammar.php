@@ -15,6 +15,7 @@ class MySqlGrammar extends Grammar
         'aggregate',
         'columns',
         'from',
+        'partition',
         'joins',
         'wheres',
         'groups',
