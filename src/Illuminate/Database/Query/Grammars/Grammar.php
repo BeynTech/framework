@@ -122,6 +122,18 @@ class Grammar extends BaseGrammar
     }
 
     /**
+     * Compile the "partition" portion of the query.
+     *
+     * @param \Illuminate\Database\Query\Builder $query
+     * @param $partition
+     * @return string
+     */
+    protected function compilePartition(Builder $query, $partition)
+    {
+        return 'PARTITION ( '.implode(',',$partition).' )';
+    }
+
+    /**
      * Compile the "join" portions of the query.
      *
      * @param  \Illuminate\Database\Query\Builder  $query
