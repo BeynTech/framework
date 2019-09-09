@@ -52,7 +52,7 @@
         "illuminate/container": "self.version",
         "illuminate/contracts": "self.version",
         "illuminate/cookie": "self.version",
-        "beyntech/database": "self.version",
+        "beyntech/database": "5.1.99",
         "illuminate/encryption": "self.version",
         "illuminate/events": "self.version",
         "illuminate/exception": "self.version",
